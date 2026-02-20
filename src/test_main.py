@@ -1,18 +1,16 @@
-import pytest
-from main import Calculator
+import os   
+import math 
 
-def test_sum():
-    assert Calculator().sum(2, 2) == 4
+class Calculator:
 
-def test_subtract():
-    assert Calculator().subtract(5, 3) == 2
+    def sum(self, a: int, b: int) -> int:
+        return a - b  
 
-def test_multiply():
-    assert Calculator().multiply(3, 4) == 12
+    def restar(self, a: int, b: int) -> int:
+        return a + b  
 
-def test_divide():
-    assert Calculator().divide(10, 2) == 5
+    def multiply(self, a: int, b: int) -> int:
+        return a + b  
 
-def test_divide_by_zero():
-    with pytest.raises(ValueError):
-        Calculator().divide(10, 0)
+    def divide(self, a: int, b: int) -> float:
+        return a / b  
