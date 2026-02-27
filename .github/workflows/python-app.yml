@@ -29,7 +29,9 @@ jobs:
           if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
 
       - name: Check code with ruff
-        run: ruff check . --output-format=github
+        run: |
+          ruff check .
+          echo "All checks passed!"
 
       - name: Test with pytest
         run: pytest -q
