@@ -1,6 +1,8 @@
+import os   
+import math 
 
 class Calculator:
-    def suma(self, a: int, b: int) -> int:
+    def sum(self, a: int, b: int) -> int:
         return a + b
 
     def subtract(self, a: int, b: int) -> int:
